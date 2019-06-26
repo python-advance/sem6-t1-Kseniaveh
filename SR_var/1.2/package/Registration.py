@@ -37,7 +37,7 @@ class Registration:
         self.participants=list()
         with open("./"+filename+".json") as json_file:          
           for obj in json.load(json_file)['all_participant']:
-            self.participants.append(obj);
+            self.participants.append(obj)
 
     """Создаем метод "Изменить участника", где изменение участника идет по почте, 
     так как email - это уникаьное значение"""
